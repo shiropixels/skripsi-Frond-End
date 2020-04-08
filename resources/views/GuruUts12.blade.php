@@ -2,7 +2,7 @@
 <html>
 <head>
 
-	<title>Lapor Online SMA UTS Kelas 11</title>
+	<title>Lapor Online SMA UTS Kelas 12</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -40,7 +40,7 @@
 		<strong>{{$message}}</strong>
 	</div>	
 	@endif
-	<form method="post" enctype="multipart/form-data" action="{{url('/GuruUts11/importUts11')}}">
+	<form method="post" enctype="multipart/form-data" action="{{url('/GuruUts12/importUts12')}}">
 		{{csrf_field()}}
 		<div class="form-group">
 			<table class="table">
@@ -65,14 +65,14 @@
 		BACK to TOP
 	</button> 
 
-	<a href="{{ url('downloadDataUts11/xlsx') }}"><button class="btn btn-dark">Download Excel xlsx</button></a>
+	<a href="{{ url('downloadDataUts12/xlsx') }}"><button class="btn btn-dark">Download Excel xlsx</button></a>
 
 	<a href="/home" class="btn btn-success my-3" target="_blank">Tampilan Dashboard</a>
 	
 
 	<div class="panel panel-default">
 		<div class="panel-heading">
-			<h3 class="panel-title">Nilai Kelas 11 UTS</h3>
+			<h3 class="panel-title">Nilai Kelas 12 UTS</h3>
 		</div>
 		<div class="panel-body">
 			<div class="table-responsive">

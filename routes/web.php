@@ -23,8 +23,13 @@ Route::get('/GuruUts11', 'GuruControllerUts11@indexUts11');
 Route::get('downloadDataUts11/{type}','GuruControllerUts11@downloadDataUts11');
 Route::post('/GuruUts11/importUts11','GuruControllerUts11@importUts11');
 //ROUTE UNTUK UAS KELAS 11
-
-
+Route::get('/GuruUas11','GuruControllerUas11@indexUas11');
+Route::get('downloadDataUas11/{type}','GuruControllerUas11@downloadDataUas11');
+Route::post('/GuruUas11/importUas11','GuruControllerUas11@importUas11');
+//Route Untuk UTS KELAS 12
+Route::get('/GuruUts12', 'GuruControllerUts12@indexUts12');
+Route::get('downloadDataUts12/{type}','GuruControllerUts12@downloadDataUts12');
+Route::post('/GuruUts12/importUts12','GuruControllerUts12@importUts12');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
