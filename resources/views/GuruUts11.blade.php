@@ -2,7 +2,7 @@
 <html>
 <head>
 
-	<title>Lapor Online SMA UTS Kelas 11</title>
+	<title>Lapor Online SMA UTS Kelas 10</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -72,7 +72,7 @@
 
 	<div class="panel panel-default">
 		<div class="panel-heading">
-			<h3 class="panel-title">Siswa Data</h3>
+			<h3 class="panel-title">Nilai Kelas 11 UTS</h3>
 		</div>
 		<div class="panel-body">
 			<div class="table-responsive">
@@ -82,10 +82,6 @@
 						<th>Nis</th>
 						<th>Nilai</th>
 					</tr>
-
-					@empty($data)
-					Data Not Available
-					@else
 					@foreach($data as $row)
 					<tr>
 						<td>{{ $row->nama }}</td>
@@ -93,8 +89,6 @@
 						<td>{{ $row->nilai }}</td>
 					</tr>
 					@endforeach
-					@endempty
-					
 				</table>
 			</div>
 		</div>

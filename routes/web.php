@@ -23,9 +23,6 @@ Route::get('/GuruUts11', 'GuruControllerUts11@indexUts11');
 Route::get('downloadDataUts11/{type}','GuruControllerUts11@downloadDataUts11');
 Route::post('/GuruUts11/importUts11','GuruControllerUts11@importUts11');
 //ROUTE UNTUK UAS KELAS 11
-Route::get('/GuruUas11', 'GuruControllerUas11@indexUas11');
-Route::get('downloadDataUas11/{type}','GuruControllerUas11@downloadDataUas11');
-Route::post('/GuruUas11/importUas11','GuruControllerUas11@importUas11');
 
 
 Auth::routes();
