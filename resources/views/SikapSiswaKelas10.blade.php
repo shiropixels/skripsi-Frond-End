@@ -2,7 +2,7 @@
 <html>
 <head>
 
-	<title>Lapor Online SMA UTS Kelas 10</title>
+	<title>Deskripsi siswa terhadap Pelajaran</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -40,7 +40,7 @@
 		<strong>{{$message}}</strong>
 	</div>	
 	@endif
-	<form method="post" enctype="multipart/form-data" action="{{url('/GuruUts10/importUts')}}">
+	<form method="post" enctype="multipart/form-data" action="{{url('/SikapSiswaKelas10/importSikap10')}}">
 		{{csrf_field()}}
 		<div class="form-group">
 			<table class="table">
@@ -65,28 +65,54 @@
 		BACK to TOP
 	</button> 
 
-	<a href="{{ url('downloadDataUts/xlsx') }}"><button class="btn btn-dark">Download Excel xlsx</button></a>
-
+	
 	<a href="/home" class="btn btn-success my-3" target="_blank">Tampilan Dashboard</a>
-	<a href="/SikapSiswaKelas10" class="btn btn-success my-3" target="_blank">Tampilan Sikap</a>
-
+	
+<a href="/GuruUts10" class="btn btn-success my-3" target="_blank">Tampilan Nilai uts 10</a>
 	<div class="panel panel-default">
 		<div class="panel-heading">
-			<h3 class="panel-title">Nilai Kelas 10 UTS</h3>
+			<h3 class="panel-title">Kelompok A (wajib)</h3>
 		</div>
 		<div class="panel-body">
 			<div class="table-responsive">
 				<table class="table table-bordered table-striped" table id="dataTables-example">
 					<tr>
-						<th>Name</th>
-						<th>Nis</th>
-						<th>Nilai</th>
+						<th>No</th>
+						<th>MataPelajaran</th>
+						<th>Kompetensi</th>
+						<th>Catatan</th>
 					</tr>
 					@foreach($data as $row)
 					<tr>
-						<td>{{ $row->nama }}</td>
-						<td>{{ $row->nis }}</td>
-						<td>{{ $row->nilai }}</td>
+						<td>{{ $row->no }}</td>
+						<td>{{ $row->matapelajaran }}</td>
+						<td>{{ $row->kompetensi}}</td>
+						<td>{{ $row->catatan}}</td>
+					</tr>
+					@endforeach
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">Kelompok B (wajib)</h3>
+		</div>
+		<div class="panel-body">
+			<div class="table-responsive">
+				<table class="table table-bordered table-striped" table id="dataTables-example">
+					<tr>
+						<th>No</th>
+						<th>MataPelajaran</th>
+						<th>Kompetensi</th>
+						<th>Catatan</th>
+					</tr>
+					@foreach($data as $row)
+					<tr>
+						<td>{{ $row->no }}</td>
+						<td>{{ $row->matapelajaran }}</td>
+						<td>{{ $row->kompetensi}}</td>
+						<td>{{ $row->catatan}}</td>
 					</tr>
 					@endforeach
 				</table>

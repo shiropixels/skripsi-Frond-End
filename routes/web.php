@@ -31,6 +31,9 @@ Route::get('/GuruUts12', 'GuruControllerUts12@indexUts12');
 Route::get('downloadDataUts12/{type}','GuruControllerUts12@downloadDataUts12');
 Route::post('/GuruUts12/importUts12','GuruControllerUts12@importUts12');
 Auth::routes();
+//Route Untuk Deskripsi Siswa Kelas 10
+Route::get('/SikapSiswaKelas10', 'GuruControllerDeskripsiSiswa10@indexSikap10');
+Route::post('/SikapSiswaKelas10/importSikap10','GuruControllerDeskripsiSiswa10@importSikap10');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
