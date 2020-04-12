@@ -34,6 +34,12 @@ Auth::routes();
 //Route Untuk Deskripsi Siswa Kelas 10
 Route::get('/SikapSiswaKelas10', 'GuruControllerDeskripsiSiswa10@indexSikap10');
 Route::post('/SikapSiswaKelas10/importSikap10','GuruControllerDeskripsiSiswa10@importSikap10');
+//Route Untuk Deskripsi Siswa Kelas 11
+Route::get('/SikapSiswaKelas11', 'GuruControllerDeskripsiSiswa11@indexSikap11');
+Route::post('/SikapSiswaKelas11/importSikap11','GuruControllerDeskripsiSiswa11@importSikap11');
+//route Untuk deskripsi siswa kelas 12
+Route::get('/SikapSiswaKelas12', 'GuruControllerDeskripsiSiswa12@indexSikap12');
+Route::post('/SikapSiswaKelas12/importSikap12','GuruControllerDeskripsiSiswa12@importSikap12');
 
 Route::get('/home', 'HomeController@index')->name('home');
 

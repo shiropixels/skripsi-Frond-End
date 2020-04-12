@@ -2,7 +2,7 @@
 <html>
 <head>
 
-	<title>Deskripsi siswa terhadap Pelajaran kelas 10</title>
+	<title>Deskripsi siswa terhadap Pelajaran kelas 12</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -40,7 +40,7 @@
 		<strong>{{$message}}</strong>
 	</div>	
 	@endif
-	<form method="post" enctype="multipart/form-data" action="{{url('/SikapSiswaKelas10/importSikap10')}}">
+	<form method="post" enctype="multipart/form-data" action="{{url('/SikapSiswaKelas12/importSikap12')}}">
 		{{csrf_field()}}
 		<div class="form-group">
 			<table class="table">
@@ -68,7 +68,7 @@
 	
 	<a href="/home" class="btn btn-success my-3" target="_blank">Tampilan Dashboard</a>
 	
-<a href="/GuruUts10" class="btn btn-success my-3" target="_blank">Tampilan nilai siswa kelas 10</a>
+<a href="/GuruUts12" class="btn btn-success my-3" target="_blank">Tampilan nilai kelas 12</a>
 	<div class="panel panel-default">
 		<div class="panel-heading">
 			<h3 class="panel-title">Kelompok A (wajib)</h3>
