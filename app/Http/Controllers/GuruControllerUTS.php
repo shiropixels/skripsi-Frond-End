@@ -50,8 +50,8 @@ class GuruControllerUts extends Controller
 			}
 			if(!empty($insert_data))
 			{
-				DB::table('siswa')->insert($insert_data);
-				DB::table('siswa_temp')->insert($insert_data);
+				DB::table('siswa_10_uts')->insert($insert_data);
+				DB::table('siswa_10_uts_temp')->insert($insert_data);
 			}
 		}
 		return back()->with('success','Excel Data Imported Successfully');

@@ -30,6 +30,10 @@ Route::post('/GuruUas11/importUas11','GuruControllerUas11@importUas11');
 Route::get('/GuruUts12', 'GuruControllerUts12@indexUts12');
 Route::get('downloadDataUts12/{type}','GuruControllerUts12@downloadDataUts12');
 Route::post('/GuruUts12/importUts12','GuruControllerUts12@importUts12');
+//Route Untuk Uas Kelas 12
+Route::get('/GuruUas12','GuruControllerUas12@indexUas12');
+Route::get('downloadDataUas12/{type}','GuruControllerUas12@downloadDataUas12');
+Route::post('/GuruUas12/importUas12','GuruControllerUas12@importUas12');
 Auth::routes();
 //Route Untuk Deskripsi Siswa Kelas 10
 Route::get('/SikapSiswaKelas10', 'GuruControllerDeskripsiSiswa10@indexSikap10');
@@ -44,9 +48,9 @@ Route::post('/SikapSiswaKelas12/importSikap12','GuruControllerDeskripsiSiswa12@i
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/' ,function(){
-  if(Auth::check()){
-  	return redirect('/home');
-  }else{
-  	return view('auth.login');
-  }
+	if(Auth::check()){
+		return redirect('/home');
+	}else{
+		return view('auth.login');
+	}
 });

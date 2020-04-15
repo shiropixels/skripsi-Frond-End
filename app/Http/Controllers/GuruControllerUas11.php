@@ -45,8 +45,8 @@ class GuruControllerUas11 extends Controller
 
     		if(!empty($insert_data))
     		{
-    			DB::table('siswa_uas_11')->insert($insert_data);
-    			DB::table('siswa_temp_uas_11')->insert($insert_data);
+    			DB::table('siswa_11_uas')->insert($insert_data);
+    			DB::table('siswa_11_uas_temp')->insert($insert_data);
     		}
     	}
 

@@ -45,8 +45,8 @@ class GuruControllerUts11 extends Controller
 
     		if(!empty($insert_data))
     		{
-    			DB::table('siswa_uts_11')->insert($insert_data);
-    			DB::table('siswa_temp_uts_11')->insert($insert_data);
+    			DB::table('siswa_11_uts')->insert($insert_data);
+    			DB::table('siswa_11_uts_temp')->insert($insert_data);
     		}
     	}
 

@@ -4,8 +4,8 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class siswa_temp_uts_11 extends Model
+class Siswa_Uas_12 extends Model
 {
-    protected $table ="siswa_11_uts_temp";
+    protected $table = "siswa_12_uas";
     protected $fillable =['nama','nis','nilai'];
 }
