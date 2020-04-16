@@ -2,7 +2,7 @@
 <html>
 <head>
 
-	<title>Lapor Online SMA UAS Kelas 11</title>
+	<title>Deskripsi siswa terhadap Pelajaran kelas 10 Uas</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -40,7 +40,7 @@
 		<strong>{{$message}}</strong>
 	</div>	
 	@endif
-	<form method="post" enctype="multipart/form-data" action="{{url('/GuruUas11/importUas11')}}">
+	<form method="post" enctype="multipart/form-data" action="{{url('/SikapSiswaKelas10Uas/importSikap10Uas')}}">
 		{{csrf_field()}}
 		<div class="form-group">
 			<table class="table">
@@ -64,30 +64,55 @@
 	<button type="button" id="fab-dom-order " class="btn fa-arrow btn-primary floatingActionButton text-center">
 		BACK to TOP
 	</button> 
-	<form method="post" enctype="multipart/form-data" action="{{url('/GuruUas11/downloadDataUas11')}}">
-	</form>
-	<a href="{{ url('downloadDataUas11/xlsx') }}"><button class="btn btn-dark">Download Excel xlsx</button></a>
 
+	
 	<a href="/home" class="btn btn-success my-3" target="_blank">Tampilan Dashboard</a>
-	<a href="/SikapSiswaKelas11Uas" class="btn btn-success my-3" target="_blank">Tampilan Sikap Siswa Kelas 11</a>
-
+	
+<a href="/GuruUas10" class="btn btn-success my-3" target="_blank">Tampilan nilai siswa kelas 10 Uas</a>
 	<div class="panel panel-default">
 		<div class="panel-heading">
-			<h3 class="panel-title">Nilai Siswa UAS Kelas 11</h3>
+			<h3 class="panel-title">Kelompok A (wajib)</h3>
 		</div>
 		<div class="panel-body">
 			<div class="table-responsive">
 				<table class="table table-bordered table-striped" table id="dataTables-example">
 					<tr>
-						<th>Name</th>
-						<th>Nis</th>
-						<th>Nilai</th>
+						<th>No</th>
+						<th>MataPelajaran</th>
+						<th>Kompetensi</th>
+						<th>Catatan</th>
 					</tr>
 					@foreach($data as $row)
 					<tr>
-						<td>{{ $row->nama }}</td>
-						<td>{{ $row->nis }}</td>
-						<td>{{ $row->nilai }}</td>
+						<td>{{ $row->no }}</td>
+						<td>{{ $row->matapelajaran }}</td>
+						<td>{{ $row->kompetensi}}</td>
+						<td>{{ $row->catatan}}</td>
+					</tr>
+					@endforeach
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">Kelompok B (wajib)</h3>
+		</div>
+		<div class="panel-body">
+			<div class="table-responsive">
+				<table class="table table-bordered table-striped" table id="dataTables-example">
+					<tr>
+						<th>No</th>
+						<th>MataPelajaran</th>
+						<th>Kompetensi</th>
+						<th>Catatan</th>
+					</tr>
+					@foreach($data as $row)
+					<tr>
+						<td>{{ $row->no }}</td>
+						<td>{{ $row->matapelajaran }}</td>
+						<td>{{ $row->kompetensi}}</td>
+						<td>{{ $row->catatan}}</td>
 					</tr>
 					@endforeach
 				</table>

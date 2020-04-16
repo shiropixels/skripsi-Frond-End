@@ -62,38 +62,38 @@
 		</div>
 	</form>
 	<button type="button" id="fab-dom-order " class="btn fa-arrow btn-primary floatingActionButton text-center">
-	BACK to TOP
+		BACK to TOP
 	</button> 
-		<form method="post" enctype="multipart/form-data" action="{{url('/GuruUas10/downloadDataUas')}}">
-		</form>
-		<a href="{{ url('downloadDataUas/xlsx') }}"><button class="btn btn-dark">Download Excel xlsx</button></a>
+	<form method="post" enctype="multipart/form-data" action="{{url('/GuruUas10/downloadDataUas')}}">
+	</form>
+	<a href="{{ url('downloadDataUas/xlsx') }}"><button class="btn btn-dark">Download Excel xlsx</button></a>
 
-		<a href="/home" class="btn btn-success my-3" target="_blank">Tampilan Dashboard</a>
+	<a href="/home" class="btn btn-success my-3" target="_blank">Tampilan Dashboard</a>
 
-
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				<h3 class="panel-title">Nilai Siswa UAS Kelas 10</h3>
-			</div>
-			<div class="panel-body">
-				<div class="table-responsive">
-					<table class="table table-bordered table-striped" table id="dataTables-example">
-						<tr>
-							<th>Name</th>
-							<th>Nis</th>
-							<th>Nilai</th>
-						</tr>
-						@foreach($data as $row)
-						<tr>
-							<td>{{ $row->nama }}</td>
-							<td>{{ $row->nis }}</td>
-							<td>{{ $row->nilai }}</td>
-						</tr>
-						@endforeach
-					</table>
-				</div>
+	<a href="/SikapSiswaKelas10Uas" class="btn btn-success my-3" target="_blank">Tampilan Sikap Siswa Kelas 10</a>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">Nilai Siswa UAS Kelas 10</h3>
+		</div>
+		<div class="panel-body">
+			<div class="table-responsive">
+				<table class="table table-bordered table-striped" table id="dataTables-example">
+					<tr>
+						<th>Name</th>
+						<th>Nis</th>
+						<th>Nilai</th>
+					</tr>
+					@foreach($data as $row)
+					<tr>
+						<td>{{ $row->nama }}</td>
+						<td>{{ $row->nis }}</td>
+						<td>{{ $row->nilai }}</td>
+					</tr>
+					@endforeach
+				</table>
 			</div>
 		</div>
 	</div>
+</div>
 </body>
 </html>
