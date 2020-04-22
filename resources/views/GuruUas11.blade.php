@@ -17,7 +17,8 @@
 
 
 	<link rel="stylesheet" type="text/css" href="{{asset('css/float.css')}}"/>
-
+	<link rel="stylesheet" type="text/css" href="{{asset('css/navbar.css')}}"/>
+	<link rel="stylesheet" type="text/css" href="{{asset('css/dropdown.css')}}"/>
 
 </head>
 <body>
@@ -71,13 +72,25 @@
 	<a href="/home" class="btn btn-success my-3" target="_blank">Tampilan Dashboard</a>
 	<a href="/SikapSiswaKelas11Uas" class="btn btn-success my-3" target="_blank">Tampilan Sikap Siswa Kelas 11</a>
 
+
+	<div class="dropdown" style="float: right;">
+		<button class="dropbtn">Tampilan Nilai</button>
+		<div class="dropdown-content">
+			<a href="GuruUts10">Nilai Uts Kelas 10</a>
+			<a href="GuruUas10">Nilai Uas Kelas 10</a>	
+			<a href="GuruUts11">Nilai Uts Kelas 11</a>
+			<a href="GuruUts12">Nilai Uts Kelas 12</a>
+			<a href="GuruUas12">Nilai Uas Kelas 12</a>
+		</div>		
+	</div>
+
 	<div class="panel panel-default">
 		<div class="panel-heading">
 			<h3 class="panel-title">Nilai Siswa UAS Kelas 11</h3>
 		</div>
 		<div class="panel-body">
 			<div class="table-responsive">
-				<table class="table table-bordered table-striped" table id="dataTables-example">
+				<table class="table table-bordered table-striped" table id="siswa">
 					<tr>
 						<th>Name</th>
 						<th>Nis</th>

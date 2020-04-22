@@ -17,8 +17,7 @@
 
 
 	<link rel="stylesheet" type="text/css" href="{{asset('css/float.css')}}"/>
-
-
+	<link rel="stylesheet" type="text/css" href="{{asset('css/navbar.css')}}"/>
 </head>
 <body>
 
@@ -68,14 +67,14 @@
 	
 	<a href="/home" class="btn btn-success my-3" target="_blank">Tampilan Dashboard</a>
 	
-<a href="/GuruUas11" class="btn btn-success my-3" target="_blank">Tampilan nilai siswa kelas 11 Uas</a>
+	<a href="/GuruUas11" class="btn btn-success my-3" target="_blank">Tampilan nilai siswa kelas 11 Uas</a>
 	<div class="panel panel-default">
 		<div class="panel-heading">
 			<h3 class="panel-title">Kelompok A (wajib)</h3>
 		</div>
 		<div class="panel-body">
 			<div class="table-responsive">
-				<table class="table table-bordered table-striped" table id="dataTables-example">
+				<table class="table table-bordered table-striped" table id="siswa">
 					<tr>
 						<th>No</th>
 						<th>MataPelajaran</th>
@@ -100,7 +99,7 @@
 		</div>
 		<div class="panel-body">
 			<div class="table-responsive">
-				<table class="table table-bordered table-striped" table id="dataTables-example">
+				<table class="table table-bordered table-striped" table id="siswa">
 					<tr>
 						<th>No</th>
 						<th>MataPelajaran</th>
