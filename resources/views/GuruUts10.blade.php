@@ -71,17 +71,17 @@
 
 	<a href="{{ url('downloadDataUts/xlsx') }}"><button class="btn btn-dark">Download Excel xlsx</button></a>
 
-	<a href="/home" class="btn btn-success my-3" target="_blank">Tampilan Dashboard</a>
 	<a href="/SikapSiswaKelas10" class="btn btn-success my-3" target="_blank">Tampilan Sikap</a>
 
 	<div class="dropdown" style="float: right;">
-		<button class="dropbtn">Tampilan Nilai</button>
+		<button class="dropbtn">Tampilan Menu</button>
 		<div class="dropdown-content">
 			<a href="GuruUas10">Nilai Uas Kelas 10</a>	
 		    <a href="GuruUts11">Nilai Uts Kelas 11</a>
 			<a href="GuruUas11">Nilai Uas Kelas 11</a>
 			<a href="GuruUts12">Nilai Uts Kelas 12</a>
 			<a href="GuruUas12">Nilai Uas Kelas 12</a>
+			<a href="home">Dashboard</a>
 		</div>		
 	</div>
 

@@ -18,6 +18,7 @@
 
 	<link rel="stylesheet" type="text/css" href="{{asset('css/float.css')}}"/>
 	<link rel="stylesheet" type="text/css" href="{{asset('css/navbar.css')}}"/>
+	<link rel="stylesheet" type="text/css" href="{{asset('css/dropdown.css')}}"/>
 
 </head>
 <body>
@@ -64,11 +65,18 @@
 	<button type="button" id="fab-dom-order " class="btn fa-arrow btn-primary floatingActionButton text-center">
 		BACK to TOP
 	</button> 
+	<div class="dropdown" style="float: right;">
+		<button class="dropbtn">Tampilan Menu</button>
+		<div class="dropdown-content">
+			<a href="SikapSiswaKelas10Uas">Sikap Siswa Uas Kelas 10</a>	
+			<a href="SikapSiswaKelas11Uts">Sikap Siswa Uts Kelas 11</a>
+			<a href="SikapSiswaKelas11Uas">Sikap Siswa Uas Kelas 11</a>
+			<a href="SikapSiswaKelas12Uts">Sikap Siswa Uts Kelas 12</a>
+			<a href="SikapSiswaKelas12Uas">Sikap Siswa Uas Kelas 12</a>
+			<a href="home">Dashboard</a>
+		</div>		
+	</div>
 
-	
-	<a href="/home" class="btn btn-success my-3" target="_blank">Tampilan Dashboard</a>
-	
-	<a href="/GuruUts10" class="btn btn-success my-3" target="_blank">Tampilan nilai siswa kelas 10</a>
 	<div class="panel panel-default">
 		<div class="panel-heading">
 			<h3 class="panel-title">Kelompok A (wajib)</h3>

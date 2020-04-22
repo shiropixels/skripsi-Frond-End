@@ -68,7 +68,7 @@
 
 	<a href="{{ url('downloadDataUts11/xlsx') }}"><button class="btn btn-dark">Download Excel xlsx</button></a>
 
-	<a href="/home" class="btn btn-success my-3" target="_blank">Tampilan Dashboard</a>
+	
 	
 	<a href="/SikapSiswaKelas11" class="btn btn-success my-3" target="_blank">Tampilan sikap siswa kelas 11</a>
 
@@ -80,6 +80,7 @@
 			<a href="GuruUas11">Nilai Uas Kelas 11</a>
 			<a href="GuruUts12">Nilai Uts Kelas 12</a>
 			<a href="GuruUas12">Nilai Uas Kelas 12</a>
+			<a href="home">Dashboard</a>
 		</div>		
 	</div>
 	

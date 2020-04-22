@@ -18,6 +18,7 @@
 
 	<link rel="stylesheet" type="text/css" href="{{asset('css/float.css')}}"/>
 	<link rel="stylesheet" type="text/css" href="{{asset('css/navbar.css')}}"/>
+    <link rel="stylesheet" type="text/css" href="{{asset('css/dropdown.css')}}"/>
 
 </head>
 <body>
@@ -66,9 +67,22 @@
 	</button> 
 
 	
-	<a href="/home" class="btn btn-success my-3" target="_blank">Tampilan Dashboard</a>
+	
 	
 	<a href="/GuruUas12" class="btn btn-success my-3" target="_blank">Tampilan nilai siswa kelas 12 Uas</a>
+	<div class="dropdown" style="float: right;">
+		<button class="dropbtn">Tampilan Sikap Siswa</button>
+		<div class="dropdown-content">
+			<a href="SikapSiswaKelas10">Sikap Siswa Uts Kelas 10</a>	
+			<a href="SikapSiswaKelas10Uas">Sikap Siswa Uas Kelas 10</a>
+			<a href="SikapSiswaKelas11">Sikap Siswa Uts Kelas 11</a>
+			<a href="SikapSiswaKelas11Uas">Sikap Siswa Uas Kelas 11</a>
+			<a href="SikapSiswaKelas12">Sikap Siswa Uts Kelas 12</a>
+			<a href="home">Dashboard</a>
+		</div>		
+	</div>
+
+
 	<div class="panel panel-default">
 		<div class="panel-heading">
 			<h3 class="panel-title">Kelompok A (wajib)</h3>

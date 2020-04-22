@@ -70,7 +70,7 @@
 	</form>
 	<a href="{{ url('downloadDataUas12/xlsx') }}"><button class="btn btn-dark">Download Excel xlsx</button></a>
 
-	<a href="/home" class="btn btn-success my-3" target="_blank">Tampilan Dashboard</a>
+	
 	<a href="/SikapSiswaKelas12Uas" class="btn btn-success my-3" target="_blank">Tampilan Sikap Siswa Kelas 12</a>
 	<div class="dropdown" style="float: right;">
 		<button class="dropbtn">Tampilan Nilai</button>
@@ -80,6 +80,7 @@
 			<a href="GuruUts11">Nilai Uts Kelas 11</a>
 			<a href="GuruUas11">Nilai Uas Kelas 11</a>
 			<a href="GuruUts12">Nilai Uts Kelas 12</a>
+			<a href="home">Dashboard</a>
 		</div>		
 	</div>
 

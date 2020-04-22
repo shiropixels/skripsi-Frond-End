@@ -81,6 +81,7 @@
 			<a href="GuruUts11">Nilai Uts Kelas 11</a>
 			<a href="GuruUts12">Nilai Uts Kelas 12</a>
 			<a href="GuruUas12">Nilai Uas Kelas 12</a>
+			<a href="home">Dashboard</a>
 		</div>		
 	</div>
 
