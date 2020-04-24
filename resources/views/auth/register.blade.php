@@ -61,6 +61,19 @@
                             </div>
                         </div>
 
+                        <div class="form-group{{$errors->has('jabatan')?'has-error':''}}">
+                            <label class="col-md-4 control-label">Jabatan</label>
+                            <div class="col-md-6">
+                                <select name="jabatan" class="form-control">
+                                    <option value="ADMIN">ADMIN</option>
+                                    <option value="GURU">GURU</option>
+                                    <option value="SISWA">SISWA</option>
+                                </select>
+                                
+                            </div>
+                            
+                        </div>
+
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
