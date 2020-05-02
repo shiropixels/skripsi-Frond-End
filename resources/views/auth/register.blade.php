@@ -65,9 +65,9 @@
                             <label class="col-md-4 control-label">Jabatan</label>
                             <div class="col-md-6">
                                 <select name="jabatan" class="form-control">
-                                    <option value="ADMIN">ADMIN</option>
-                                    <option value="GURU">GURU</option>
-                                    <option value="SISWA">SISWA</option>
+                                    <option value="Admin">Admin</option>
+                                    <option value="Guru">Guru</option>
+                                    <option value="Siswa">Siswa</option>
                                 </select>
                                 
                             </div>

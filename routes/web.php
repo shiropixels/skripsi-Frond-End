@@ -56,8 +56,28 @@ Route::post('/SikapSiswaKelas12/importSikap12','GuruControllerDeskripsiSiswa12@i
 Route::get('/SikapSiswaKelas12Uas', 'GuruControllerDeskripsiSiswa12Uas@indexSikap12Uas');
 Route::post('/SikapSiswaKelas12Uas/importSikap12Uas','GuruControllerDeskripsiSiswa12Uas@importSikap12Uas');
 
-Route::get('/home', 'HomeController@index')->name('home');
+  Route::get('/home', 'HomeController@index')->name('home');
 
+Auth::routes();
+//Route untuk admin
+Route::group(['middleware' =>'Admin'],function(){
+
+
+});
+//Route untuk Guru
+Route::group(['middleware' =>'user'],function(){
+	// Route::get('/GuruUts10', 'GuruControllerUts@indexUts');
+	// Route::get('downloadDataUts/{type}','GuruControllerUts@downloadDataUts');
+	// Route::post('/GuruUts10/importUts','GuruControllerUts@importUts');
+	// Route::get('/home', 'HomeController@index')->name('home');
+
+});
+
+//Route untuk Siswa
+Route::group(['middleware' =>'Siswa'],function(){
+
+
+});
 Route::get('/' ,function(){
 	if(Auth::check()){
 		return redirect('/home');

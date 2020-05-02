@@ -7,3 +7,193 @@
 	background-size: cover;
 	background-color: #464646;
 }
+
+*{
+	font-family: roboto;
+	webkit-box-sizing: border-box;
+	moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	background-color:#22627C;
+	overflow: hidden;
+/*	position: relative;*/
+}
+
+/*---------login---------*/
+
+.logo>img{
+	width: 70%;
+	height: auto;
+	padding: 20px;
+
+}
+
+.login{
+	width: auto;
+	height: auto;
+ 	display: grid;
+ 	top: 50%;
+ 	left: 50%;
+ 	justify-items: center;
+/* 	box-sizing: border-box;*/
+ 	/*align-items: center;*/
+ 	position: absolute;
+ 	transform: translate(-50%,-50%);
+ 	background-color: white;
+ 	border-radius: 7px;
+}
+
+/*-----------login error------------*/
+#login-error{}
+
+/*-----------login form-------------*/
+
+#login-form{
+	align-self: flex-start;
+ 	display: grid;
+ 	justify-items: center;
+ 	/*align-items: center;*/
+/* 	position: relative;*/
+}
+
+/*.login-form-field::placeholder {
+  
+}
+*/
+.login-form-field{
+	width: 85%;
+	height: 70%;
+	/*align-items: center;*/
+	background-color: #E8E8E8;
+	color: #939393; 
+	/*width: 20%*/
+	font-size: 15px;
+	border: none;
+ 	margin: 10px;
+ 	outline: none;
+ 	padding: 15px;
+}
+
+.login-form-field:hover{
+	background-color: #C9C9C9;
+	/*color: #EBEBEB;*/
+}
+
+/*------------ remember box ----------*/
+
+#remember-box{
+	border: none;
+	outline: none;
+	left: 10%;
+	cursor: pointer;
+}
+
+#container{
+	background-color: #E8E8E8;
+}
+
+/*------- custom remember box --------*/
+
+/*.container{
+	display: block;
+ 	position: relative;
+  	padding-left: 35px;
+  	margin-bottom: 12px;
+  	cursor: pointer;
+  	font-size: 15px;
+  	-webkit-user-select: none;
+  	-moz-user-select: none;
+  	-ms-user-select: none;
+  	user-select: none;
+}
+
+.container input {
+	position: absolute;
+  	opacity: 0;
+  	cursor: pointer;
+  	height: 0;
+ 	width: 0;
+}
+
+.checkmark{
+	height: 20px;
+	width: 20px;
+	position: absolute;
+  	top: 0;
+  	left: 0;
+	background-color: #eee;
+}
+
+.container:hover input ~ .checkmark{
+	background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark{
+	background-color: #2196F3;
+}
+
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+.container input:checked ~ .checkmark:after{
+	display: block;
+}
+
+.container .checkmark:after{
+	left: 9px;
+  	top: 5px;
+  	width: 5px;
+  	height: 10px;
+  	border: solid white;
+  	border-width: 0 3px 3px 0;
+  	-webkit-transform: rotate(45deg);
+  	-ms-transform: rotate(45deg);
+  	transform: rotate(45deg);
+}*/
+
+
+/*---------- login button -----------*/
+
+#login-button{
+	width: 85%;
+	font-size: 20px;
+	/*font-weight: bold;*/
+	border: none;
+	outline: none;
+	background-color: #22627C;
+	color: #FFFFFF;
+	padding: 10px;
+	margin: 10px;
+	cursor: pointer;
+}
+
+#login-button:hover{
+	background-color: #2E7FA1;
+}
+
+/*----- forgot password --------*/
+
+#fp-button{
+	/*padding: 5px;*/
+	border: none;
+	outline: none;
+	font-size: 15px;
+	background-color: #FFFFFF;
+	color: #3DB6E7; 
+	cursor: pointer;
+	margin: 10px 10px 40px 10px;
+	position: relative;
+	left: 0%;
+}
+
+#fp-button>img{
+	margin-right: 5px;
+	width: 5%;
+	height: auto;
+
+}

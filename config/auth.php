@@ -45,6 +45,16 @@ return [
             'driver' => 'token',
             'provider' => 'users',
         ],
+        'guru' => [
+            'driver' => 'session',
+            'provider' => 'guru',
+        ],
+        'siswa' => [
+            'driver' => 'session',
+            'provider' => 'siswa',
+        ],
+        
+
     ],
 
     /*
@@ -74,6 +84,18 @@ return [
         //     'driver' => 'database',
         //     'table' => 'users',
         // ],
+        'guru' => [
+            'driver' => 'eloquent',
+            'model' => App\Guru::class,
+         ],
+
+        'siswa' => [
+            'driver' => 'eloquent',
+            'model' => App\SiswaLogin::class,
+         ],
+             
+             
+
     ],
 
     /*
@@ -97,6 +119,22 @@ return [
             'table' => 'password_resets',
             'expire' => 60,
         ],
+
+        'guru' =>[
+            'provider' => 'guru',
+            'table' => 'password_resets',
+            'expire' => 60,
+        ],
+
+        'siswa' =>[
+            'provider' => 'siswa',
+            'table' => 'password_resets',
+            'expire' => 60,
+        ],
+        
+
     ],
+
+
 
 ];
